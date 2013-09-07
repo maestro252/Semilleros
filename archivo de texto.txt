@@ -1,0 +1,8 @@
+//archivo de texto de experimento.
+#include<iostream>
+using namespace std;
+
+int main(){
+cout << "Estoy en el archivo de texto" << endl;
+return 0;
+}
