@@ -17,7 +17,7 @@ def primos():
 				print "Primo encontrado %i" % (primo)
 			primo += 1
 
-		final = int(time.time())
+		final = float(time.time())
 
 		print "Tiempo total: %i segundos" % (final - inicial)
 
