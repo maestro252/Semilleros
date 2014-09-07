@@ -1,0 +1,21 @@
+//acordarse que solo asisto a la ultima parte del curso semanal.
+
+absoluto :: Integer -> Integer
+absoluto 0 = 0
+absoluto x
+	| x < 0 = -x
+	| x > 0 = x
+
+-- Lista: puede ser vacio, o e:lista.por ejemplo [1,2,3] es equivalente a 1:2:3:[] 
+
+longitud :: [Integer] -> Integer
+longitud [] = 0
+longitud (_:xs) = 1 + longitud xs
+
+longitud' :: [Integer] -> Integer
+lonigtud' xs = case xs of
+		[] -> 0
+		(x:ys) -> 1 + longitud' ys
+
+longitud'' :: [Integer] -> Integer
+longitud'' xs = if null xs then 0 else 1 + longitud'' (tail xs)

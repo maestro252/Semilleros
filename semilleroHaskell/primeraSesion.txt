@@ -1,0 +1,93 @@
+compilado
+ghci: interpretador
+solo calcula expresiones
+fuertemente tipeado
+tipos de datos predeterminados:
+int (acotado)
+Integer (no acotado)
+char
+bool
+float
+double
+() -> unit (null/void)
+Commandos para interpretados empiezan con ‘:’
+     ej:     :cmd
+
+:set +t           := inferir tipo de dato (se muestra en el interpretador)
+
+:set +s          := estadística de operación
+
+:!<command>            $<command>
+
+:set editor <editor>          editor de texto para editar
+:edit <file>                    abre el file
+:edit                              abre el ultimo
+
+:load <file>                    compilar archivo
+
+
+
+
+Tiene:
+valores (formas normales) (int, char, etc) (literales)
+funciones 
+Operadores
+
+
+http://www.haskell.org/haskellwiki/Haskell
+
+
+http://www.haskell.org/hoogle/                              mas estable
+http://holumbus.fh-wedel.de/hayoo/hayoo.html    mejor
+
+Existe un plugin para eclipse
+
+
+Funcion de aplicación tiene la mayor precedencia de operadores
+     cos 2 * pi      !=      cos (2 * pi)
+     ((cos 2) * pi) !=      cos (2*pi)
+
+Declaracion de función:
+     cos :: (floating a) => a -> a
+     nombre :: (clasificación de tipo) => entrada -> salida
+clasificación de tipos pueden ser grupos de tipos de datos
+(:: es signatura de funcion)
+
+nombres de funcion en minuscula
+nombres de tipos de datos en mayúscula
+
+
+Creando funciones
+     declaración de función
+     definición de función
+
+la declaración la puede inferir, es decir que no es necesario declarar las funciones, pero estas las infiere muy genéricamente
+
+
+Redex : expresión evaluable
+     ej:       doble 3,     2 + 3
+
+
+
+Definicion haskell
+Variables son inmutables
+No tiene ciclos
+Las funciones no tiene ningún tipo de dato por lo que se pueden pasar como argumento
+Cada valor debe tener un tipo asociado (inferencia en tiempo de compilación)
+
+Tuplas: 
+     ej     (3,6)        (int, int) 
+
+fst          obtiene el primero
+snd         obtiene el segundo
+
+
+Listas: 
+     ej: [True, False, True]
+          True:False:True:[]
+          []
+          e : lista
+
+recursos:
+     http://learnyouahaskell.com/
+     http://book.realworldhaskell.org/

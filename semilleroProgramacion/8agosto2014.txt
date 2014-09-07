@@ -1,0 +1,84 @@
+Presentacion Semillero de programacion. 8 de agosto de 2014.
+
+Estructuras de datos y bibliotecas.
+
+- Arreglo estatico:
+
+Coleccion de dato secuencial, que se guardan para poder ser consultados a futuro utilizando los indices.
+declaracion: tipo nombre [tamaño]; (c++)
+             tipo [] nombre = new tipo[tamaño]; (Java)
+- Arreglos dinamicos:
+su longitud no es predestinada, es variable. Tambien se accede a su contenido usando subindices.
+en c++: Vectores. vector<tipo> nombre;
+funciones: push_back(), [], at().
+
+- arreglo de booleans o bitsets: solo almacenan valores booleanos.
+permiten almacenar muchos bits de forma eficiente.
+en c++ hay funciones desde la biblioteca bitset.
+bitset<cantidad de bits> nombre; si se le pasan parametros lo iniciara con cierto contenido.
+por ejemplo bitset<16> bits1 (string("110001010")); //bits1 = 0000000110001010.
+count() dice cuantos bits estan prendidos.
+yo_ulong() pasa el valor en bits a un long sin signo.
+
+- Mascaras de bits.
+a conjunto de bits se le puede hacer shifting >> << que desplaza hacia la izquierda o hacia la derecha los bits, agregando ceros en las posiciones que aparecen.
+por ejemplo 0010010 le hacemos >>;>>;>>.
+en la primera instruccion queda 0001001.
+en la segunda instruccion queda 0000100.
+en la tercera instruccion queda 0000010.
+
+para saber si un bit esta prendido: Sea s el conjunto de bits s & (1 << j), donde j es la posicion del bit que se quiere consultar.
+
+por ejemplo s = 101010
+queremos saber si el bit de la 4 posicion esta prendido.
+al hacer 1 << 4 = 010000
+
+al comparar 101010
+            010000
+            ------
+            000000 esto indica que no es prendido, cuando da diferente de cero quiere decir que esta prendido.
+para encender un bit se hace lo mismo con la operacion logica OR (|=).
+para apagar un bit se hace lo mismo con la operacion AND &=
+s = 101010
+j = 1
+s &= ~(1 << j)
+
+101010
+~(000010) = 111101
+
+101010
+111101
+------
+101011 y como vemos se encencio el bit que necesitaba.
+
+Multiplicar o dividir por potencias de 2: para multiplicar se desplaza hacia la izquierda la cantidad de veces que equivale a la potencia que se necesita.
+
+por ejemplo 34*2 : 1000010 = s; s = s << 1 (porque como se va a multiplicar por 2, 2 a la 1 es 2); ahora s es 10000100 que es 68.
+
+para dividir se hace lo mismo pero desplazando hacia la derecha.
+Esta division devuelve la parte entera.
+
+- Pilas: arreglos que solo permiten operaciones en la parte de arriba. Push y pop, push agrega en la primera posicion y pop devuelve la primera posicion. es el sistema LIFO, Last Input First Output.
+top() dice el elemento que esta pero no lo saca de la pila
+empty() dice es vacia o no
+size() numero de elementos de la pila
+push(x) empuja x a la pila
+pop() tumba el primer elemento pero lo bota, pop() es de signatura void.
+
+- Colas: es similar a las pilas pero es de sistema FIFO (First Input First Output).
+las operaciones son push(x), pop(), front(), empty(), size(). Front indica cual esta en el elemento proximo a salir pero no lo saca.
+
+ESTRUCTURAS DE DATOS NO LINEALES.
+
+Arboles binarios de busqueda.
+librerias de c++ que los usan, map, set.
+
+MAPA
+
+guarda parejas de elementos KEY, MAPPED VALUE key es una manera de identificarlo y el mapped value es el valor correspondiente.
+map <tipo, tipo> nombre; (Es para guardar tuplas, tambien es llamado diccionario).
+los elementos de un mapa se llaman por su llave.
+map <String, int> m;
+m["Hola"] = 3;
+int a = m["Cangrejo"];
+m.count["algo"] indica si existe un valor asociado a la llave algo en el mapa.

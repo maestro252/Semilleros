@@ -1,0 +1,12 @@
+Seccion -> funcion currificada.
+let elecarCuadrado = (^2)
+(Leer mas de secciones y operadores binarios en Haskell)
+ETHA REDUCCION
+---------------{
+f(x) = si x es libre en f, se puede llamar la funcion sin el parametro x.
+que x sea libre significa que no se hace nada directamente con el parametro que se recibe.
+(Ejemplo en el .hs "aplicarUnaVez").
+---------------}
+
+$ es un operador de aplicacion, tiene la prioridad mas baja de todas y es muy util para evitar
+el uso de parentesis.
