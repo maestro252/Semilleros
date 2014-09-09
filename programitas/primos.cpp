@@ -9,7 +9,7 @@ using namespace std;
 int main (){
 	time_t ini = clock();
 	int primo = 2;
-	while (primo <= 5000){
+	while (primo <= 150000){
 		int i = 1;
 		int dividen = 0;
 		while(i <= primo){
@@ -24,6 +24,6 @@ int main (){
 		primo++;
 	}
 	ini = clock() - ini;
-	cout << "El tiempo total de ejecucion fue " << (float)ini/100000 << " segundos" << endl; 
+	cout << "El tiempo total de ejecucion fue " << (float)ini/100 << " milisegundos" << endl; 
 	return 0;
 }
