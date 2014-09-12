@@ -9,7 +9,7 @@ using namespace std;
 int main (){
 	time_t ini = clock();
 	int primo = 2;
-	while (primo <= 150000){
+	while (primo <= 5000){
 		int i = 1;
 		int dividen = 0;
 		while(i <= primo){
