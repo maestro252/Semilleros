@@ -8,7 +8,7 @@ long divisores(long long n){
 	for (long long i = 1; i < n; ++i)
 	{
 		if(n % i == 0) res += i;
-
+			
 	}
 	return res;
 }

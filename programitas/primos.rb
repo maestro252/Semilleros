@@ -20,7 +20,7 @@ while i <= 5000
 		#sleep(0.02)
 		#system 'say plop'
 		van += 1
-	end 
+	end
 	# case i
 	# 	when 100 then puts "En los primeros 100 numeros hay #{van} primos"
 	# 	when 1000 then puts "En los primeros 1000 numeros hay #{van} primos"
@@ -36,4 +36,3 @@ end
 final = Time.now.to_i
 
 puts "Tiempo total de ejecucion #{final - inicial} segundos"
-
