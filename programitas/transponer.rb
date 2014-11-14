@@ -3,6 +3,7 @@
 def transpose(matrix)
   for i in 0..matrix.count - 1
     for j in i..matrix[i].count - 1
+      next if i == j
       tmp = matrix[i][j]
       matrix[i][j] = matrix[j][i]
       matrix[j][i] = tmp
