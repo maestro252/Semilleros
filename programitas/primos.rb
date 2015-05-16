@@ -6,7 +6,7 @@ puts "A continuacion se imprimiran todos los numero primos"
 i = 2
 van = 0
 inicial = Time.now.to_i
-while i <= 5000
+while i <= 9883
 	j = 1
 	dividen = 0
 	while j <= i
