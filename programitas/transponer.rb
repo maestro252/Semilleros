@@ -1,5 +1,4 @@
 #!/Users/jonathaneidelman/.rvm/rubies/ruby-2.1.3/bin/ruby
-
 def transpose(matrix)
   for i in 0..matrix.count - 1
     for j in i..matrix[i].count - 1
