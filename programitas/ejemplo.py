@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#Aprendiendo a usar nerdtree 
 import time
 class Algoritmos():
 	def elevar(self, n=33):
