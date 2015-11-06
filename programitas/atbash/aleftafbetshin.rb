@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/Users/jonathaneidelman/.rvm/rubies/ruby-2.2.3/bin/ruby 
 
 def mapping(cc)
   cc.downcase!
@@ -42,8 +42,13 @@ def mapping(cc)
 end
 
 #main
-puts "Ingrese la cadena a traducir"
-text = gets.chomp
+#puts "Ingrese la cadena a traducir"
+file = File.new("in.txt", "r")
+text = ""
+while line = file.gets
+  text += line
+  text += "\n"
+end 
 x = text.length
 trad = ""
 i = 0
