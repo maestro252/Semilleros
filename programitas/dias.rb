@@ -1,4 +1,4 @@
-#!/Users/jonathaneidelman/.rvm/rubies/ruby-2.1.3/bin/ruby
+#!/Users/jonathaneidelman/.rvm/rubies/ruby-2.2.3/bin/ruby
 
 class Day
  attr_accessor :name, :num_id
