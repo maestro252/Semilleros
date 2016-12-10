@@ -16,7 +16,7 @@ function drawTree(x1, y1, angle, depth){
 }
 
 function setup(){
-  createCanvas(2000, 2000);
+  createCanvas(1000, 1000);
   background(0, 0, 0);
   angleMode(DEGREES);
 }
