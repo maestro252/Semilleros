@@ -23,11 +23,14 @@ function setup(){
 
 function draw(){
   noLoop();
-  stroke(255);
   strokeWeight(2);
   translate(width/2,height/2);
+  stroke(255);
   drawTree(0, 0, -90, d);
+  stroke(0, 255, 0);
   drawTree(0, 0, -180, d);
+  stroke(255);
   drawTree(0, 0, -270, d);
+  stroke(0, 255, 0);
   drawTree(0, 0, 0, d);
 }
