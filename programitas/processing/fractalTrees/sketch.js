@@ -25,12 +25,16 @@ function draw(){
   noLoop();
   strokeWeight(2);
   translate(width/2,height/2);
+
   stroke(255, 255, 255, 150);
   drawTree(0, 0, -90, d);
+  
   stroke(0, 255, 0, 150);
   drawTree(0, 0, -180, d);
+
   stroke(255, 255, 255, 150);
   drawTree(0, 0, -270, d);
+
   stroke(0, 255, 0, 150);
   drawTree(0, 0, 0, d);
 }
